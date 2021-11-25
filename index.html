@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>Challenge 1</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            div#container{
+                width: 800px;
+                height: 1035px;
+                border-width: 2px;
+                border-color: black ;
+                border-style: solid;
+                background-image: url(images/bg-1.png);
+                position: relative;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            /*Hex 1 Start*/
+            .hexagon1 {
+  position: absolute;
+  width: 300px; 
+  height: 173.21px;
+  background-color: #ffffff;
+  margin: 86.60px 0;
+  top: 286px;;
+  left: 300px;
+  transform: rotate(47deg);
+  z-index: 20;
+}
+
+.hexagon1:before,
+.hexagon1:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+
+.hexagon1:before {
+  bottom: 100%;
+  border-bottom: 86.60px solid #ffffff;
+}
+
+.hexagon1:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid #ffffff;
+}
+            /*Hex 1 end*/
+            /*Hex 2 start  */
+            .hexagon2 {
+  position: absolute;
+  width: 250px; 
+  height: 144.34px;
+  background-color: #ffffff;
+  margin: 72.17px 0;
+  top:536px;
+  left:604px;
+  transform: rotate(47deg);
+}
+
+.hexagon2:before,
+.hexagon2:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+}
+
+.hexagon2:before {
+  bottom: 100%;
+  border-bottom: 72.17px solid #ffffff;
+}
+
+.hexagon2:after {
+  top: 100%;
+  width: 0;
+  border-top: 72.17px solid #ffffff;
+}
+            /* Hex 2 end*/
+
+            /* Hex 3 start*/
+            .hexagon3 {
+  position: absolute;
+  width: 400px; 
+  height: 230.94px;
+  background-color: #fff70a;
+  margin: 115.47px 0;
+  top: -33px;
+  left: 490px;
+  transform: rotate(47deg);
+  z-index: ;
+}
+
+.hexagon3:before,
+.hexagon3:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+}
+
+.hexagon3:before {
+  bottom: 100%;
+  border-bottom: 115.47px solid #fff70a;
+  overflow: hidden;
+}
+
+.hexagon3:after {
+  top: 100%;
+  width: 0;
+  border-top: 115.47px solid #fff70a;
+}
+/* Hex 3 end*/
+
+div#headline{
+    margin: 50 0 0 50;
+}
+
+div#headline h3{
+    font-size: 70px;
+    font-family:monospace;
+    color:white;
+}
+div#headline h6{
+    font-size: 30px;
+    font-family: monospace;
+    color:turquoise;
+}
+div#headline p{
+    font-size: 15px;
+    font-family: sans-serif;
+    color:turquoise;
+}
+
+div#titletext{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top:580px;
+    left:40px;
+}
+div#titletext p{
+    text-align: justify;
+    color: gray;
+}
+div#titletext h4{
+    color: turquoise;
+    text-align: justify;
+    font-size: 50px;
+}
+
+div.hexagon1 h1{
+    transform: rotate(-47deg);
+    font-size: 25px;
+    position:absolute;
+    top:60px;
+    left: 58px;
+}
+div.hexagon2 h1{
+    transform: rotate(-47deg);
+    font-size: 25px;
+    position:absolute;
+    top:60px;
+    left: 10px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="hexagon1">
+                <h1>YOUR IMAGE</h1>
+            </div>
+            <div class="hexagon2">
+                <h1>YOUR IMAGE</h1>
+            </div>
+            <div class="hexagon3"></div>
+            <div id ="headline">
+                <h3>HEADLINE</h3>
+                <h6>SPACE HERE</h6>
+                <p>Lorem Ipsum</p>
+            </div>
+            <div id =titletext >
+                <h4>Title Text</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+
+        </div>
+    </body>
+
+</html>
